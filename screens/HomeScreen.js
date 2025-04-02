@@ -27,7 +27,7 @@ const HomeScreen = () => {
     Alert.alert('Eliminar', '¿Deseas Eliminar este artículo?', [
       { text: 'cancelar', style: 'cancel' },
       {
-        text: 'sí, eliminar',
+        text: 'sí, eliminar articulo',
         style: 'destructive',
         onPress: () => firestore().collection('articulos').doc(id).delete(),
       },
